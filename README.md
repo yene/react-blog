@@ -25,6 +25,9 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * Should post preview use <article>?
 * Where should I load the articles?
 
+## Notes
+Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
+
 ## Todo
 - [ ] make package private so it does not get pushed accidentally
 - [ ] put static files into seperate folder but copy them over in build phase, hopefully without additional tools
