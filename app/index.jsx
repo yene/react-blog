@@ -18,7 +18,7 @@ request.onload = function() {
     let files = dummyElement.querySelectorAll('ul#files li a')
     for (var i = 0; i < files.length; i++) {
       let name = files[i].querySelector('.name').innerHTML
-      if (name != '..') {
+      if (name == '..') {
         continue;
       }
 
