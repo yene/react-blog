@@ -1,13 +1,18 @@
-// load all articles from HTTP listing
-
 import React from 'react';
 import PostPreview from './post-preview';
 
+
 class PostListing extends React.Component {
   render() {
+    var previewNodes = this.props.data.map(post => {
+      return (
+        <PostPreview author={post.author} title={post.title} body={post.body} date={post.date}/>
+      )
+    })
+
     return (
       <main className="postListing">
-        <PostPreview author="Writer" title="title" body="asdf" date="today"/>
+        {previewNodes}
       </main>
     );
   }

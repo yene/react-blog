@@ -23,8 +23,15 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * How to copy static files with webpack
 * What to render in React and what to hardcode in HTML? -> blog listing in react, rest html
 * Should post preview use <article>?
+* Where should I load the articles?
 
 ## Todo
 - [ ] make package private so it does not get pushed accidentally
 - [ ] put static files into seperate folder but copy them over in build phase, hopefully without additional tools
 - [ ] add markdown support
+- [ ] load articles from server
+- [ ] 
+
+
+## sources
+* https://facebook.github.io/react/docs/jsx-in-depth.html
