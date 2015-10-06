@@ -1,6 +1,6 @@
 # React blog something
 
-Small blog in react that uses HTTP directory listing as index, no backend needed.
+Small Blog in react, to learn react, that uses HTTP directory listing as index, no backend needed.
 
 
 ## Technology
@@ -20,6 +20,11 @@ Small blog in react that uses HTTP directory listing as index, no backend needed
 ## Questions & Goals
 * How to add CSS to ES2015 modules, is there a nice way with webpack.
 * Learn a few things that then can be ported to blog software hugo.
+* How to copy static files with webpack
+* What to render in React and what to hardcode in HTML? -> blog listing in react, rest html
+* Should post preview use <article>?
 
 ## Todo
 - [ ] make package private so it does not get pushed accidentally
+- [ ] put static files into seperate folder but copy them over in build phase, hopefully without additional tools
+- [ ] add markdown support

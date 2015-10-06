@@ -1,7 +1,7 @@
 import React from 'react';
-import HelloWorld from './hello-world';
+import PostListing from './post-listing';
 
 React.render(
-  <HelloWorld />,
-  document.body
+  <PostListing />,
+  document.getElementById('listing')
 );
