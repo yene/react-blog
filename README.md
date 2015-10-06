@@ -24,6 +24,7 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * What to render in React and what to hardcode in HTML? -> blog listing in react, rest html
 * Should post preview use <article>?
 * Where should I load the articles?
+* How to set state in react+es2015, does it require a babel option? -> going stage 0 means we are very experimental
 
 ## Notes
 Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
@@ -35,6 +36,8 @@ Loading the content async will cause the components to update, the user will not
 - [ ] load articles from server
 - [ ] add fallback for all external libs
 
+## Learned
+* use constructor instead of getInitialState in ES2015
 
 ## sources
 * https://facebook.github.io/react/docs/jsx-in-depth.html

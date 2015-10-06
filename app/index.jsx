@@ -1,5 +1,5 @@
 import React from 'react';
-import PostListing from './post-listing';
+import DownloadPosts from './download-posts';
 
 var request = new XMLHttpRequest();
 request.open('GET', 'content', true);
@@ -15,19 +15,20 @@ request.onload = function() {
     var dummyElement = document.createElement('dummy');
     dummyElement.innerHTML = this.response;
 
-    var files = dummyElement.querySelectorAll('ul#files li a')
-    for (let f of files) {
-      let name = f.querySelector('.name').innerHTML
-      if (name == '..') {
+    let files = dummyElement.querySelectorAll('ul#files li a')
+    for (var i = 0; i < files.length; i++) {
+      let name = files[i].querySelector('.name').innerHTML
+      if (name != '..') {
         continue;
       }
 
-      let date = f.querySelector('.date').innerHTML
+      let date = files[i].querySelector('.date').innerHTML
       data.push({"filename": name, "date": date});
-    }
+    };
+
 
     React.render(
-      <PostListing files={data}/>,
+      <DownloadPosts files={data}/>,
       document.getElementById('listing')
     );
   } else {
