@@ -23,11 +23,11 @@ request.onload = function() {
       }
 
       let date = f.querySelector('.date').innerHTML
-      data.push({"title": name, "date": date});
+      data.push({"filename": name, "date": date});
     }
 
     React.render(
-      <PostListing data={data}/>,
+      <PostListing files={data}/>,
       document.getElementById('listing')
     );
   } else {

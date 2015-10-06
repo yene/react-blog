@@ -33,7 +33,7 @@ Loading the content async will cause the components to update, the user will not
 - [ ] put static files into seperate folder but copy them over in build phase, hopefully without additional tools
 - [ ] add markdown support
 - [ ] load articles from server
-- [ ] 
+- [ ] add fallback for all external libs
 
 
 ## sources
