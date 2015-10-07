@@ -36,6 +36,7 @@ Loading the content async will cause the components to update, the user will not
 - [ ] add markdown support
 - [ ] load articles from server
 - [ ] add fallback for all external libs
+- [ ] setup linter
 
 ## Learned
 * use constructor instead of getInitialState in ES2015, set the state directly
