@@ -31,13 +31,14 @@ Loading the content async will cause the components to update, the user will not
 
 ## Todo
 - [ ] make package private so it does not get pushed accidentally
+- [ ] revert code back, take post name from filename, just list without preview
 - [ ] put static files into seperate folder but copy them over in build phase, hopefully without additional tools
 - [ ] add markdown support
 - [ ] load articles from server
 - [ ] add fallback for all external libs
 
 ## Learned
-* use constructor instead of getInitialState in ES2015
+* use constructor instead of getInitialState in ES2015, set the state directly
 
 ## sources
 * https://facebook.github.io/react/docs/jsx-in-depth.html

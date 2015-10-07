@@ -1,19 +1,17 @@
 import React from 'react';
-import PostPreview from './post-preview';
-
 
 class PostListing extends React.Component {
   render() {
-    var previewNodes = this.props.posts.map(post => {
+    var previewNodes = this.props.files.map(f => {
       return (
-        <PostPreview author={post.author} title={post.title} body={post.body} date={post.date}/>
+        <li><a href={f.filename}>{f.filename} - {f.date}</a></li>
       )
     })
 
     return (
-      <main className="postListing">
+      <ul className="postListing">
         {previewNodes}
-      </main>
+      </ul>
     );
   }
 }

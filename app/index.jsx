@@ -1,5 +1,5 @@
 import React from 'react';
-import DownloadPosts from './download-posts';
+import PostListing from './post-listing';
 
 var request = new XMLHttpRequest();
 request.open('GET', 'content', true);
@@ -8,10 +8,7 @@ var data = [];
 
 request.onload = function() {
   if (this.status >= 200 && this.status < 400) {
-    /*
-    Parse the files out form the webservers directory listing.
-    */
-
+    // Parse the files out form the webservers directory listing.
     var dummyElement = document.createElement('dummy');
     dummyElement.innerHTML = this.response;
 
@@ -28,17 +25,15 @@ request.onload = function() {
 
 
     React.render(
-      <DownloadPosts files={data}/>,
+      <PostListing files={data}/>,
       document.getElementById('listing')
     );
   } else {
-    // We reached our target server, but it returned an error
     // TODO render error msg
   }
 };
 
 request.onerror = function() {
-  // There was a connection error of some sort
   // TODO render error msg
 };
 
