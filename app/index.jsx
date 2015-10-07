@@ -3,6 +3,11 @@ import PostListing from './post-listing';
 import Post from './post';
 import { Router, Route, Link } from 'react-router'
 
+    React.render(
+      <PostListing />,
+      document.getElementById('listing')
+    );
+/*
 React.render((
   <Router>
     <Route path="/" component={PostListing}>
@@ -13,7 +18,7 @@ React.render((
   </Router>
 ),document.getElementById('listing'));
 
-
+*/
 
 
 
