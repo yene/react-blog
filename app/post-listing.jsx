@@ -61,12 +61,9 @@ class PostListing extends React.Component {
     })
 
     return (
-      <div>
-      <Post filename="anoter-post.md" title="Another Post" date="1.1.2015" />
       <ul className="postListing">
         {previewNodes}
       </ul>
-      </div>
     );
   }
 
