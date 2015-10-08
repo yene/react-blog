@@ -14,7 +14,7 @@ class PostListing extends React.Component {
 
     var that = this;
     request.onload = function() {
-      if (this.status >= 200 && this.status < 400) {
+      if (this.status == 200) {
         // Parse the files out form the webservers directory listing.
         var dummyElement = document.createElement('dummy');
         dummyElement.innerHTML = this.response;

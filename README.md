@@ -38,6 +38,9 @@ Loading the content async will cause the components to update, the user will not
 - [ ] load articles from server
 - [ ] add fallback for all external libs
 - [ ] setup linter
+- [ ] update to react 0.14
+- [ ] optimize the production build result with babel and minify
+- [ ] 
 
 ## Learned
 * use constructor instead of getInitialState in ES2015, set the state directly
