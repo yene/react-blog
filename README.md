@@ -44,6 +44,7 @@ Loading the content async will cause the components to update, the user will not
 
 ## Learned
 * use constructor instead of getInitialState in ES2015, set the state directly
+* adjacent JSX must be wrapped in one root tag
 
 ## links
 * https://facebook.github.io/react/docs/jsx-in-depth.html

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, Link } from 'react-router'
+import Post from './post';
 
 class PostListing extends React.Component {
   constructor(props) {
@@ -28,11 +28,12 @@ class PostListing extends React.Component {
             continue;
           }
 
-          let date = files[i].querySelector('.date').innerHTML
+          let rawDate = files[i].querySelector('.date').innerHTML
+          let date = that.formatDate(rawDate)
           var title = that.removeExtension(name)
           title = that.removeDash(title)
           title = that.capitalize(title)
-          f.push({"filename": name, "title": title, "date": date});
+          f.push({"filename": name, "title": title, "rawDate": rawDate,"date": date});
         }
         that.setState({files: f});
 
@@ -55,14 +56,17 @@ class PostListing extends React.Component {
   render() {
     var previewNodes = this.state.files.map(f => {
       return (
-        <li><a href={'post/' + f.filename} onClick={this.handleClick}>{f.title}</a> {this.formatDate(f.date)}</li>
+        <li><a href={'post/' + f.filename} onClick={this.handleClick}>{f.title}</a> {f.date}</li>
       )
     })
 
     return (
+      <div>
+      <Post filename="anoter-post.md" title="Another Post" date="1.1.2015" />
       <ul className="postListing">
         {previewNodes}
       </ul>
+      </div>
     );
   }
 

@@ -1,24 +1,48 @@
 import React from 'react';
-// TODO limit body to x chracters
-// TODO format date correctly to RFC3339
+import Marked from 'marked';
 
-class PostPreview extends React.Component {
-  articlePreview() {
-    // TODO brutally cut off too long text
-    return this.props.body
+class Post extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {body: ''};
+    this.loadFile(this.props.filename);
+  }
+
+  rawMarkdown() {
+    let rawMarkup = Marked(this.state.body, {sanitize: true});
+    return { __html: rawMarkup };
+  }
+
+  loadFile(filename) {
+      var request = new XMLHttpRequest();
+      request.open('GET', '/content/' + filename, true);
+      //request.overrideMimeType("text/html");
+      var that = this;
+      request.onload = function() {
+        if (this.status == 200) {
+          that.setState({body: this.response});
+        } else {
+          that.setState({body: 'Error loading Post.'});
+        }
+      };
+      request.onerror = function() {
+        that.setState({body: 'Error loading Post.'});
+      };
+
+      request.send();
   }
 
   render() {
     return (
-      <article className="postPreview">
+      <article className="post">
         <header>
           <h2>{this.props.title}</h2>
-          <p>Posted on <time datetime="2011-04-15T16:31:24+02:00">{this.props.date}</time> by {this.props.author}</p>
+          <p>Posted on <time>{this.props.date}</time></p>
         </header>
-        <p>{this.articlePreview()}</p>
+        <p dangerouslySetInnerHTML={this.rawMarkdown()} />
       </article>
     );
   }
 }
 
-export default PostPreview;
+export default Post;
