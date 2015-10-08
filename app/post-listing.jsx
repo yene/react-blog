@@ -47,11 +47,15 @@ class PostListing extends React.Component {
     request.send();
   }
 
+  handleClick(e) {
+    e.preventDefault();
+    // TODO load blog post
+  }
 
   render() {
     var previewNodes = this.state.files.map(f => {
       return (
-        <li>{f.title} {this.formatDate(f.date)}</li>
+        <li><a href={'post/' + f.filename} onClick={this.handleClick}>{f.title}</a> {this.formatDate(f.date)}</li>
       )
     })
 
