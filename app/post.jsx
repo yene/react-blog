@@ -16,7 +16,6 @@ class Post extends React.Component {
   loadFile(filename) {
       var request = new XMLHttpRequest();
       request.open('GET', '/content/' + filename, true);
-      //request.overrideMimeType("text/html");
       var that = this;
       request.onload = function() {
         if (this.status == 200) {
@@ -33,15 +32,32 @@ class Post extends React.Component {
   }
 
   render() {
+    var title = this.removeExtension(this.props.params.filename)
+    title = this.removeDash(title)
+    title = this.capitalize(title)
+
     return (
       <article className="post">
         <header>
-          <h2>{this.props.title}</h2>
-          <p>Posted on <time>{this.props.date}</time></p>
+          <h2>{title}</h2>
         </header>
         <p dangerouslySetInnerHTML={this.rawMarkdown()} />
       </article>
     );
+  }
+
+  removeExtension(s) {
+    return s.replace('.md', '')
+  }
+
+  removeDash(s) {
+    return s.split('-').join(' ')
+  }
+
+  capitalize(s) {
+    return s.split(' ').map( v => {
+      return v.charAt(0).toUpperCase() + v.slice(1);
+    }).join(' ')
   }
 }
 

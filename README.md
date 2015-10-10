@@ -27,6 +27,7 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * How to set state in react+es2015, does it require a babel option? -> going stage 0 means we are very experimental
 * are semicolons required in ES2015
 * How to concatenate strings? {`/user/${user.id}`}
+* How to share code between component (ES modules)?
 
 ## Notes
 Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
@@ -39,11 +40,12 @@ Loading the content async will cause the components to update, the user will not
 - [X] load articles from server
 - [ ] add fallback for all external libs
 - [ ] setup linter
-- [ ] add react-route
+- [X] add react-route
 - [ ] update to react 0.14
 - [ ] optimize the production build result with babel and minify
 - [ ] add react router from CDN https://cdnjs.com/libraries/react-router
 - [ ] get react browser plugin working
+- [ ] extract shared code
 
 ## Learned
 * use constructor instead of getInitialState in ES2015, set the state directly
