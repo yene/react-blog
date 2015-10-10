@@ -5,7 +5,7 @@ class Post extends React.Component {
   constructor(props) {
     super(props);
     this.state = {body: ''};
-    this.loadFile(this.props.filename);
+    this.loadFile(this.props.params.filename);
   }
 
   rawMarkdown() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './post';
+import { Link } from 'react-router'
 
 class PostListing extends React.Component {
   constructor(props) {
@@ -48,15 +49,10 @@ class PostListing extends React.Component {
     request.send();
   }
 
-  handleClick(e) {
-    e.preventDefault();
-    // TODO load blog post
-  }
-
   render() {
     var previewNodes = this.state.files.map(f => {
       return (
-        <li key={f.filename}><a href={'post/' + f.filename} onClick={this.handleClick}>{f.title}</a> {f.date}</li>
+        <li key={f.filename}><Link to={'post/' + f.filename}>{f.title}</Link> {f.date}</li>
       )
     })
 

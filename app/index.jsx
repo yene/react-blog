@@ -1,11 +1,21 @@
 import React from 'react';
 import PostListing from './post-listing';
 import Post from './post';
+import { Router, Route } from 'react-router'
 
-React.render(
-  <div>
-  <Post filename="anoter-post.md" title="Another Post" date="1.1.2015" />
-  <PostListing />
-  </div>,
-  document.getElementById('content')
-);
+class NoMatch extends React.Component {
+  render() {
+    return (
+      <p>Page not found.</p>
+    )
+  }
+}
+
+React.render((
+  <Router>
+    <Route path="/" component={PostListing} />
+    <Route path="/post/:filename" component={Post} />
+    <Route path="*" component={NoMatch} />
+  </Router>
+), document.getElementById('content'));
+
