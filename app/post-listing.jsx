@@ -10,7 +10,7 @@ class PostListing extends React.Component {
 
   loadFiles() {
     var request = new XMLHttpRequest();
-    request.open('GET', 'content', true);
+    request.open('GET', '/content/', true);
 
     var that = this;
     request.onload = function() {
