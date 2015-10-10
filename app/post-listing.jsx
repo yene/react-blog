@@ -56,7 +56,7 @@ class PostListing extends React.Component {
   render() {
     var previewNodes = this.state.files.map(f => {
       return (
-        <li><a href={'post/' + f.filename} onClick={this.handleClick}>{f.title}</a> {f.date}</li>
+        <li key={f.filename}><a href={'post/' + f.filename} onClick={this.handleClick}>{f.title}</a> {f.date}</li>
       )
     })
 
