@@ -7,5 +7,5 @@ React.render(
   <Post filename="anoter-post.md" title="Another Post" date="1.1.2015" />
   <PostListing />
   </div>,
-  document.getElementById('listing')
+  document.getElementById('content')
 );

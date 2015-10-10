@@ -31,20 +31,23 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
 
 ## Todo
-- [ ] make package private so it does not get pushed accidentally
-- [ ] revert code back, take post name from filename, just list without preview
-- [ ] put static files into seperate folder but copy them over in build phase, hopefully without additional tools
-- [ ] add markdown support
-- [ ] load articles from server
+- [X] make package private so it does not get pushed accidentally
+- [X] revert code back, take post name from filename, just list without preview
+- [ ] put static files into separate folder but copy them over in build phase
+- [X] add markdown support
+- [X] load articles from server
 - [ ] add fallback for all external libs
 - [ ] setup linter
+- [ ] add react-route
 - [ ] update to react 0.14
 - [ ] optimize the production build result with babel and minify
-- [ ] 
+- [ ] add react router from CDN https://cdnjs.com/libraries/react-router
+- [ ] get react browser plugin working
 
 ## Learned
 * use constructor instead of getInitialState in ES2015, set the state directly
 * adjacent JSX must be wrapped in one root tag
+* The unminified version of React is "development" mode, and the minified version of React is "production" mode.
 
 ## links
 * https://facebook.github.io/react/docs/jsx-in-depth.html
