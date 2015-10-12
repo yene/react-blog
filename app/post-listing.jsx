@@ -2,6 +2,7 @@ import React from 'react';
 import Post from './post';
 import { Link } from 'react-router';
 import * as Helper from './helper';
+require("./post-listing.css");
 
 class PostListing extends React.Component {
   constructor(props) {
@@ -51,7 +52,7 @@ class PostListing extends React.Component {
   render() {
     var previewNodes = this.state.files.map(f => {
       return (
-        <li key={f.filename}><Link to={'post/' + f.filename}>{f.title}</Link> {f.date}</li>
+        <li key={f.filename}><Link to={'post/' + f.filename}>{f.title}</Link> <time>{f.date}</time></li>
       )
     })
 

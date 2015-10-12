@@ -1,6 +1,7 @@
 import React from 'react';
 import Marked from 'marked';
 import * as Helper from './helper';
+require("./post.css");
 
 class Post extends React.Component {
   constructor(props) {

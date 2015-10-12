@@ -31,6 +31,7 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * can webpack modify html files, does it have config variables etc?
 * why do i get a route warning but it still works? "Warning: Location "post/anoter-post.md" did not match any routes"
 * is it possible to write a webpack loader that setups the fallback js files
+* Whats a nice way to style a module or react component but still have a working build process (concat)?
 
 ## Notes
 Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
