@@ -1,0 +1,7 @@
+.post h2 {
+  color: red;
+}
+.postListing time {
+  color: goldenrod;
+  opacity: 0.7;
+}
