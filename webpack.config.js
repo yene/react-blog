@@ -16,6 +16,7 @@ module.exports = {
     },
     externals: {
         'react': 'React',
+        'react-dom': 'ReactDOM',
         'marked': 'marked'
     },
     resolve: {

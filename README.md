@@ -28,6 +28,8 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * are semicolons required in ES2015
 * How to concatenate strings? {`/user/${user.id}`}
 * How to share code between component (ES modules)?
+* can webpack modify html files, does it have config variables etc?
+* why do i get a route warning but it still works? "Warning: Location "post/anoter-post.md" did not match any routes"
 
 ## Notes
 Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
@@ -47,7 +49,7 @@ Loading the content async will cause the components to update, the user will not
 - [ ] get react browser plugin working
 - [X] extract shared code
 - [ ] CSS styling
-- [ ] deploy process
+- [ ] deploy process -> replace .js with min.js
 - [ ] a little bit of unit testing
 - [ ] are semicolons required (babel) -> use eslinter
 
