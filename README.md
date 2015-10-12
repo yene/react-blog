@@ -40,7 +40,7 @@ Loading the content async will cause the components to update, the user will not
 - [ ] put static files into separate folder but copy them over in build phase
 - [X] add markdown support
 - [X] load articles from server
-- [ ] add fallback for all external libs
+- [X] add fallback for all external libs
 - [ ] setup linter
 - [X] add react-route
 - [ ] update to react 0.14
