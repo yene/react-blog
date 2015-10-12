@@ -1,7 +1,7 @@
 import React from 'react';
 import Marked from 'marked';
 import * as Helper from './helper';
-require("./post.css");
+require('./post.css');
 
 class Post extends React.Component {
   constructor(props) {
@@ -16,25 +16,25 @@ class Post extends React.Component {
   }
 
   loadFile(filename) {
-      var request = new XMLHttpRequest();
-      request.open('GET', '/content/' + filename, true);
-      var that = this;
-      request.onload = function() {
-        if (this.status == 200) {
-          that.setState({body: this.response});
-        } else {
-          that.setState({body: 'Error loading Post.'});
-        }
-      };
-      request.onerror = function() {
+    var request = new XMLHttpRequest();
+    request.open('GET', '/content/' + filename, true);
+    var that = this;
+    request.onload = function() {
+      if (this.status == 200) {
+        that.setState({body: this.response});
+      } else {
         that.setState({body: 'Error loading Post.'});
-      };
+      }
+    };
+    request.onerror = function() {
+      that.setState({body: 'Error loading Post.'});
+    };
 
-      request.send();
+    request.send();
   }
 
   render() {
-    var title = Helper.transformFilename(this.props.params.filename)
+    var title = Helper.transformFilename(this.props.params.filename);
     return (
       <article className="post">
         <header>

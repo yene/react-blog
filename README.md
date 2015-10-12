@@ -32,6 +32,7 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * why do i get a route warning but it still works? "Warning: Location "post/anoter-post.md" did not match any routes"
 * is it possible to write a webpack loader that setups the fallback js files
 * Whats a nice way to style a module or react component but still have a working build process (concat)?
+* are semicolons required (babel) -> no javascript sets semicolons himself but it is good practise to have them i guess
 
 ## Notes
 Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
@@ -49,10 +50,11 @@ Loading the content async will cause the components to update, the user will not
 - [X] add react router from CDN https://cdnjs.com/libraries/react-router
 - [X] get react browser plugin working
 - [X] extract shared code
+- [X] CSS build process and modules
 - [ ] CSS styling
 - [ ] deploy process -> replace .js with min.js
 - [ ] a little bit of unit testing
-- [ ] are semicolons required (babel) -> use eslinter
+- [X] use eslint
 
 ## Learned
 * use constructor instead of getInitialState in ES2015, set the state directly

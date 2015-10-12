@@ -15,19 +15,19 @@ export function formatDate(d) {
   let day = date.getDate();
   let monthIndex = date.getMonth();
   let year = date.getFullYear();
-  return day + '.' + (monthIndex+1) + '.' + year
+  return day + '.' + (monthIndex+1) + '.' + year;
 }
 
 function removeExtension(s) {
-  return s.replace('.md', '')
+  return s.replace('.md', '');
 }
 
 function removeDash(s) {
-  return s.split('-').join(' ')
+  return s.split('-').join(' ');
 }
 
 function capitalize(s) {
   return s.split(' ').map( v => {
     return v.charAt(0).toUpperCase() + v.slice(1);
-  }).join(' ')
+  }).join(' ');
 }

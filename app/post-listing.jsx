@@ -1,8 +1,7 @@
 import React from 'react';
-import Post from './post';
 import { Link } from 'react-router';
 import * as Helper from './helper';
-require("./post-listing.css");
+require('./post-listing.css');
 
 class PostListing extends React.Component {
   constructor(props) {
@@ -23,27 +22,27 @@ class PostListing extends React.Component {
         dummyElement.innerHTML = this.response;
 
         var f = [];
-        let files = dummyElement.querySelectorAll('ul#files li a')
+        let files = dummyElement.querySelectorAll('ul#files li a');
         for (var i = 0; i < files.length; i++) {
-          let name = files[i].querySelector('.name').innerHTML
+          let name = files[i].querySelector('.name').innerHTML;
 
           if (name.slice( -3 ) != '.md') {
             continue;
           }
 
-          let rawDate = files[i].querySelector('.date').innerHTML
-          let date = Helper.formatDate(rawDate)
-          var title = Helper.transformFilename(name)
-          f.push({"filename": name, "title": title, "rawDate": rawDate,"date": date});
+          let rawDate = files[i].querySelector('.date').innerHTML;
+          let date = Helper.formatDate(rawDate);
+          var title = Helper.transformFilename(name);
+          f.push({'filename': name, 'title': title, 'rawDate': rawDate,'date': date});
         }
         that.setState({files: f});
 
       } else {
-          console.log("error repsone");
+          // TODO: what to do when there is no post index or content folder? redirect to error page maybe
       }
     };
     request.onerror = function() {
-      console.log("something went wrong")
+      // TODO: what to do when there is no post index or content folder? redirect to error page maybe
     };
 
     request.send();
@@ -53,8 +52,8 @@ class PostListing extends React.Component {
     var previewNodes = this.state.files.map(f => {
       return (
         <li key={f.filename}><Link to={'post/' + f.filename}>{f.title}</Link> <time>{f.date}</time></li>
-      )
-    })
+      );
+    });
 
     return (
       <ul className="postListing">
