@@ -1,3 +1,5 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
     context: __dirname + "/app",
     entry: "./index.jsx",
@@ -12,9 +14,15 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel'
             },
-            { test: /\.css$/, loader: "style-loader!css-loader" }
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+            }
         ]
     },
+    plugins: [
+        new ExtractTextPlugin("main.css")
+    ],
     externals: {
         'react': 'React',
         'react-dom': 'ReactDOM',
