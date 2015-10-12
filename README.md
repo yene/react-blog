@@ -30,6 +30,7 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * How to share code between component (ES modules)?
 * can webpack modify html files, does it have config variables etc?
 * why do i get a route warning but it still works? "Warning: Location "post/anoter-post.md" did not match any routes"
+* is it possible to write a webpack loader that setups the fallback js files
 
 ## Notes
 Loading the content async will cause the components to update, the user will notice a flash on the page. It would be better if the whole page would wait for the content until it renders something.
@@ -41,12 +42,11 @@ Loading the content async will cause the components to update, the user will not
 - [X] add markdown support
 - [X] load articles from server
 - [X] add fallback for all external libs
-- [ ] setup linter
 - [X] add react-route
-- [ ] update to react 0.14
-- [ ] optimize the production build result with babel and minify
-- [ ] add react router from CDN https://cdnjs.com/libraries/react-router
-- [ ] get react browser plugin working
+- [X] update to react 0.14
+- [ ] optimize the production build result with babel and minify and webpack built in https://webpack.github.io/docs/optimization.html
+- [X] add react router from CDN https://cdnjs.com/libraries/react-router
+- [X] get react browser plugin working
 - [X] extract shared code
 - [ ] CSS styling
 - [ ] deploy process -> replace .js with min.js
