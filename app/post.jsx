@@ -1,5 +1,6 @@
 import React from 'react';
 import Marked from 'marked';
+import * as Helper from './helper';
 
 class Post extends React.Component {
   constructor(props) {
@@ -32,10 +33,7 @@ class Post extends React.Component {
   }
 
   render() {
-    var title = this.removeExtension(this.props.params.filename)
-    title = this.removeDash(title)
-    title = this.capitalize(title)
-
+    var title = Helper.transformFilename(this.props.params.filename)
     return (
       <article className="post">
         <header>
@@ -44,20 +42,6 @@ class Post extends React.Component {
         <p dangerouslySetInnerHTML={this.rawMarkdown()} />
       </article>
     );
-  }
-
-  removeExtension(s) {
-    return s.replace('.md', '')
-  }
-
-  removeDash(s) {
-    return s.split('-').join(' ')
-  }
-
-  capitalize(s) {
-    return s.split(' ').map( v => {
-      return v.charAt(0).toUpperCase() + v.slice(1);
-    }).join(' ')
   }
 }
 

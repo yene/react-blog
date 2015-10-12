@@ -1,6 +1,7 @@
 import React from 'react';
 import Post from './post';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+import * as Helper from './helper';
 
 class PostListing extends React.Component {
   constructor(props) {
@@ -30,10 +31,8 @@ class PostListing extends React.Component {
           }
 
           let rawDate = files[i].querySelector('.date').innerHTML
-          let date = that.formatDate(rawDate)
-          var title = that.removeExtension(name)
-          title = that.removeDash(title)
-          title = that.capitalize(title)
+          let date = Helper.formatDate(rawDate)
+          var title = Helper.transformFilename(name)
           f.push({"filename": name, "title": title, "rawDate": rawDate,"date": date});
         }
         that.setState({files: f});
@@ -61,28 +60,6 @@ class PostListing extends React.Component {
         {previewNodes}
       </ul>
     );
-  }
-
-  removeExtension(s) {
-    return s.replace('.md', '')
-  }
-
-  removeDash(s) {
-    return s.split('-').join(' ')
-  }
-
-  capitalize(s) {
-    return s.split(' ').map( v => {
-      return v.charAt(0).toUpperCase() + v.slice(1);
-    }).join(' ')
-  }
-
-  formatDate(d) {
-    let date = new Date(d);
-    let day = date.getDate();
-    let monthIndex = date.getMonth();
-    let year = date.getFullYear();
-    return day + '.' + (monthIndex+1) + '.' + year
   }
 
 }

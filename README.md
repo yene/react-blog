@@ -45,13 +45,26 @@ Loading the content async will cause the components to update, the user will not
 - [ ] optimize the production build result with babel and minify
 - [ ] add react router from CDN https://cdnjs.com/libraries/react-router
 - [ ] get react browser plugin working
-- [ ] extract shared code
+- [X] extract shared code
+- [ ] CSS styling
+- [ ] deploy process
+- [ ] a little bit of unit testing
+- [ ] are semicolons required (babel) -> use eslinter
 
 ## Learned
 * use constructor instead of getInitialState in ES2015, set the state directly
 * adjacent JSX must be wrapped in one root tag
 * The unminified version of React is "development" mode, and the minified version of React is "production" mode.
+* If module contains only one function or class you can use `export default`
 
 ## links
 * https://facebook.github.io/react/docs/jsx-in-depth.html
 * http://ricostacruz.com/cheatsheets/react.html
+
+
+# CSS
+Style the Page based on http://dougblack.io/words/a-good-vimrc.html
+
+
+
+
