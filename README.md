@@ -70,6 +70,11 @@ Loading the content async will cause the components to update, the user will not
 # CSS
 Style the Page based on http://dougblack.io/words/a-good-vimrc.html
 
+## highlight.js
+Note: JS script blocks, not async.
+Letting highlight.js work on the virtualdom in react would have been nice.
+
+style  tomorrow
 
 
 

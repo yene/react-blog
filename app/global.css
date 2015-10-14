@@ -1,0 +1,12 @@
+body {
+  background-color: #E6E6E6;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.websiteTitle {
+  text-decoration: none;
+}

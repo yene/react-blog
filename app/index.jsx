@@ -4,7 +4,8 @@ import PostListing from './post-listing';
 import Post from './post';
 import { Router, Route } from 'react-router';
 
-require('./tacit.min.css');
+require('./normalize.css');
+require('./global.css');
 
 class NoMatch extends React.Component {
   render() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Marked from 'marked';
 import * as Helper from './helper';
 require('./post.css');
@@ -9,6 +10,15 @@ class Post extends React.Component {
     this.state = {body: ''};
     this.loadFile(this.props.params.filename);
   }
+
+  componentDidUpdate() {
+    let componentDom = ReactDOM.findDOMNode(this);
+    let domElements = componentDom.querySelectorAll("pre code");
+    for (var i = 0; i < domElements.length; i++) {
+      hljs.highlightBlock(domElements[i]);
+    };
+  }
+
 
   rawMarkdown() {
     let rawMarkup = Marked(this.state.body, {sanitize: true});
@@ -40,7 +50,7 @@ class Post extends React.Component {
         <header>
           <h2>{title}</h2>
         </header>
-        <p dangerouslySetInnerHTML={this.rawMarkdown()} />
+        <p className="markdownBody" dangerouslySetInnerHTML={this.rawMarkdown()} />
       </article>
     );
   }
