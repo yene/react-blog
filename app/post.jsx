@@ -13,12 +13,15 @@ class Post extends React.Component {
 
   componentDidUpdate() {
     let componentDom = ReactDOM.findDOMNode(this);
-    let domElements = componentDom.querySelectorAll("pre code");
+    this.highlight(componentDom);
+  }
+
+  highlight(dom) {
+    let domElements = dom.querySelectorAll(".markdownBody pre code");
     for (var i = 0; i < domElements.length; i++) {
       hljs.highlightBlock(domElements[i]);
     };
   }
-
 
   rawMarkdown() {
     let rawMarkup = Marked(this.state.body, {sanitize: true});

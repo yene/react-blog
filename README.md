@@ -61,6 +61,8 @@ Loading the content async will cause the components to update, the user will not
 * adjacent JSX must be wrapped in one root tag
 * The unminified version of React is "development" mode, and the minified version of React is "production" mode.
 * If module contains only one function or class you can use `export default`
+* ReactElements are immutable virtual Dom.
+* Refs allow you to add a callback for when the render finished.
 
 ## links
 * https://facebook.github.io/react/docs/jsx-in-depth.html
