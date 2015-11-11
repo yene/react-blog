@@ -1,12 +1,43 @@
 body {
-  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.4;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 22px;
+
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+
 }
 
 #wrapper {
   margin-left: auto;
   margin-right: auto;
+  width: 700px;
 }
 
 .websiteTitle {
   text-decoration: none;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.439216);
+  font-size: 14px;
 }
