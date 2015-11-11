@@ -71,12 +71,30 @@ Loading the content async will cause the components to update, the user will not
 
 # CSS
 Style the Page based on http://dougblack.io/words/a-good-vimrc.html
+guide lines http://cssguidelin.es
+how to write css https://speakerdeck.com/dafed/managing-css-projects-with-itcss
+
+## Notes
+* if markdown contains h1 title how should it be styled compared to the post title, equal size or smaller?
 
 ## highlight.js
 Note: JS script blocks, not async.
 Letting highlight.js work on the virtualdom in react would have been nice.
 
 style  tomorrow
+
+# Style todos
+
+## style lists
+https://medium.com/@ev/i-wrote-something-upsetting-to-people-on-the-internet-f705f83aac37
+
+## full width images
+https://medium.com/@aaronzlewis/what-s-really-going-on-at-yale-6bdbbeeb57a6
+
+## text below images
+https://medium.com/@aaronzlewis/what-s-really-going-on-at-yale-6bdbbeeb57a6
+
+
 
 
 
