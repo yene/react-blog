@@ -50,8 +50,9 @@ class PostListing extends React.Component {
 
   render() {
     var previewNodes = this.state.files.map(f => {
+      let mDate = Helper.mediumDate(f.date)
       return (
-        <li key={f.filename}><Link to={'post/' + f.filename}>{f.title}</Link> <time>{f.date}</time></li>
+        <li key={f.filename}><Link to={'post/' + f.filename}>{f.title}</Link> - <time datetime="{f.date}">{mDate}</time></li>
       );
     });
 

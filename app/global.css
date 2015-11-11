@@ -35,9 +35,18 @@ a {
 
 .websiteTitle {
   text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 footer {
   color: rgba(0, 0, 0, 0.439216);
   font-size: 14px;
 }
+
+/* metabar
+    background-color: #fafafa;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+
+*/

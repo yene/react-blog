@@ -13,6 +13,21 @@
   letter-spacing: -0.02em;
 }
 
+.post blockquote {
+  letter-spacing: .01rem;
+  font-style: italic;
+
+  border-left: 3px solid rgba(0,0,0,0.8);
+  padding-left: 20px;
+  margin-left: -23px;
+  padding-bottom: 3px;
+}
+
+blockquote p {
+  margin: 0;
+  padding: 0;
+}
+
 .post img {
   width: 100%;
 }
