@@ -2,9 +2,9 @@
 Small Blog in react, to learn react, that uses HTTP directory listing as index, no backend needed.
 
 ## Technology
-* React.js
-* Webpack
-* ES2015
+* React and react router
+* Webpack and Webpack server
+* Babel with es2015 and react preset
 
 ## Folders & Files
 * /app contains the react code
