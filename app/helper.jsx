@@ -26,25 +26,41 @@ export function mediumDate(d) {
   let date = new Date(d);
   let now = new Date();
   let diff = now - date;
+
+  let sec = Math.floor(diff / (1000))
+  if (sec < 60) {
+    return `${sec} seconds ago`;
+  }
+
+  let min = Math.floor(diff / (1000*60))
+  if (min < 60) {
+    if (min == 1) {
+      return `1 minute ago`;
+    }
+    return `${min} minutes ago`;
+  }
+
+  let hrs = Math.floor(diff / (1000*60*60))
+  if (hrs < 60) {
+    if (hrs == 1) {
+      return `1 hours ago`;
+    }
+    return `${hrs} hours ago`;
+  }
+
   let days = Math.floor(diff / (1000*60*60*24))
-  if (days == 0) {
-    let hrs = Math.floor(diff / (1000*60*60))
-    if (hrs == 0) {
-      let minutes = Math.floor(diff / (1000*60))
-      return minutes + " minutes ago"
+  if (days <= 5) {
+    if (days == 1) {
+      return `1 day ago`;
     }
-    return hrs + " hours ago"
+    return `${days} days ago`;
   }
 
-  if (days > 5) {
-    if (date.getFullYear() != now.getFullYear()) {
-      return month[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear(); // Dec 9, 2014
-    }
-
-    return month[date.getMonth()] + " " + date.getDate(); // Dec 9
+  if (date.getFullYear() == now.getFullYear()) {
+    return month[date.getMonth()] + ' ' + date.getDate(); // Dec 9
   }
 
-  return days + " days ago";
+  return month[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear(); // Dec 9, 2014
 }
 
 function removeExtension(s) {
