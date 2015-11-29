@@ -1,4 +1,4 @@
-![splash](content/rbbdzzbkrdy-nitish-meena.jpg)
+<img src="content/rbbdzzbkrdy-nitish-meena.jpg" class="fullWidth">
 
 # The Utopian UI Architect
 An ex-Apple interface designer’s 40-year plan to redesign not just the way we use computers, but the way we think with them
@@ -10,7 +10,7 @@ An ex-Apple interface designer’s 40-year plan to redesign not just the way we 
 
 Victor spent the next two months making “an app every week, explor[ing] new UI ideas” as part of a three-person “internal R&D prototyping group” that Apple had assembled. Soon, Victor says, the iPad became “a real project” and his group was reassigned to tinker with other experimental hardware. “Everyone [at Apple] was focused on the next product release, what needed to happen six months from now,” he says. “We were the ones looking at what could happen five or ten years from now.”
 
-![another image](content/fhhgpo3amsu-matteo-paganelli.jpg)
+<img src="content/fhhgpo3amsu-matteo-paganelli.jpg" class="fullWidth">
 
 Seven years later, in 2014, Bret Victor is still looking at “what could happen” to human-computer interaction in the near future. He’s still part of a close-knit internal prototyping lab (the Communications Design Group) bankrolled by a huge tech corporation (SAP). But instead of designing interfaces and exploring use cases for tomorrow’s glass-screened gadgets, Victor’s “forty-years-out vision” concerns nothing less than redesigning computing itself — not as a product or service, but “as a medium of thought.”
 

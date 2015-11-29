@@ -3,6 +3,10 @@
   line-height: 1.58;
   letter-spacing: -0.003em;
   font-family: "medium-content-serif-font",Georgia,Cambria,"Times New Roman",Times,serif;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-weight: 300;
+
 }
 
 .post h1 {
@@ -36,4 +40,9 @@ blockquote p {
   font-size: 14px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+img.fullWidth {
+  width: 100vw;
+  margin-left: calc(-50vw + 350px);
 }
