@@ -50,10 +50,7 @@ class Post extends React.Component {
     var title = Helper.transformFilename(this.props.params.filename);
     return (
       <article className="post">
-        <header>
-          <h1>{title}</h1>
-        </header>
-        <p className="markdownBody" dangerouslySetInnerHTML={this.rawMarkdown()} />
+        <div className="markdownBody" dangerouslySetInnerHTML={this.rawMarkdown()} />
       </article>
     );
   }
