@@ -24,7 +24,7 @@ class Post extends React.Component {
   }
 
   rawMarkdown() {
-    let rawMarkup = Marked(this.state.body, {sanitize: true});
+    let rawMarkup = Marked(this.state.body, {sanitize: false});
     return { __html: rawMarkup };
   }
 
