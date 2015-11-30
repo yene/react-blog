@@ -1,5 +1,13 @@
 # title
 
+<pre>
+Decimals.Three // 10.123
+Currency.USD // $10.12
+General.Ordinal // 10th
+General.SpellOut // ten point one two three
+General.Distance // 30 feet
+</pre>
+
 ## subtitle
 
 ```JavaScript
