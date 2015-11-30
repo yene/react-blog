@@ -12,7 +12,12 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 * /app/index.jsx is our webpack starting point
 
 ## external dependencies
-* React and markdown is included from CDN, with local fallback. React router is in the bundled.
+* React and markdown is included from CDN, with local fallback. React router is in the bundle. Highlight.js has no fallback.
+
+**Local copies have to be updated manually.** 
+
+## Debugging React
+To debug React use the uncompressed, development version by removing *min* from the react script element.
 
 ## Todo
 - [X] make package private so it does not get pushed accidentally
