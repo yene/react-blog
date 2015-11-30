@@ -11,19 +11,13 @@ class Post extends React.Component {
     this.loadFile(this.props.params.filename);
   }
 
-  componentDidUpdate() {
-    let componentDom = ReactDOM.findDOMNode(this);
-    this.highlight(componentDom);
-  }
-
-  highlight(dom) {
-    let domElements = dom.querySelectorAll(".markdownBody pre code");
-    for (var i = 0; i < domElements.length; i++) {
-      hljs.highlightBlock(domElements[i]);
-    };
-  }
-
   rawMarkdown() {
+    // Synchronous highlighting with highlight.js
+    Marked.setOptions({
+      highlight: function (code) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
     let rawMarkup = Marked(this.state.body, {sanitize: false});
     return { __html: rawMarkup };
   }
