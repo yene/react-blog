@@ -17,6 +17,39 @@
   letter-spacing: -0.02em;
 }
 
+.post h4 {
+  color: rgba(0, 0, 0, 0.44);
+  font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1.22;
+  letter-spacing: -0.022em;
+}
+
+.post .title {
+  text-align: center;
+  font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.post .pullquote {
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 50px;
+  font-family: "medium-content-slab-serif-font", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1.48;
+  letter-spacing: -0.014em;
+}
+
 .post blockquote {
   letter-spacing: .01rem;
   font-style: italic;

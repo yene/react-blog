@@ -1,10 +1,11 @@
 <img src="content/rbbdzzbkrdy-nitish-meena.jpg" class="fullWidth">
 
-# The Utopian UI Architect
-An ex-Apple interface designer’s 40-year plan to redesign not just the way we use computers, but the way we think with them
+<h1 class="title">The Utopian UI Architect</h1>
+
+<h4 style="text-align: center;"> An ex-Apple interface designer’s 40-year plan to redesign not just the way we use computers, but the way we think with them</h4>
 
 
->When Bret Victor came in for his first day of work as a “Human Interface Inventor” at Apple, he found an iPad sitting on his desk. It was August of 2007. The original iPhone was only a couple months old. iPods still generated a third of the company’s revenue. The App Store didn’t exist.
+<div class="pullquote">When Bret Victor came in for his first day of work as a “Human Interface Inventor” at Apple, he found an iPad sitting on his desk. It was August of 2007. The original iPhone was only a couple months old. iPods still generated a third of the company’s revenue. The App Store didn’t exist.</div>
 
 “I said, ‘What is this?’ and they said, ‘We don’t know yet,’” Victor recalls. “It was an early prototype of the hardware. Maybe twenty other people in the world knew about it. Nobody had answers. My job was to try to figure it out.”
 
