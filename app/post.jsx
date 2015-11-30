@@ -13,11 +13,13 @@ class Post extends React.Component {
 
   rawMarkdown() {
     // Synchronous highlighting with highlight.js
-    Marked.setOptions({
-      highlight: function (code) {
-        return hljs.highlightAuto(code).value;
-      }
-    });
+    if (window.hljs) {
+      Marked.setOptions({
+        highlight: function (code) {
+          return hljs.highlightAuto(code).value;
+        }
+      });
+    }
     let rawMarkup = Marked(this.state.body, {sanitize: false});
     return { __html: rawMarkup };
   }
