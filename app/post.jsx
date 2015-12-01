@@ -20,7 +20,18 @@ class Post extends React.Component {
         }
       });
     }
-    let rawMarkup = Marked(this.state.body, {sanitize: false});
+
+    var renderer = new marked.Renderer();
+    renderer.heading = function (text, level) {
+      var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+
+      return '<h' + (level+1) + '><a name="' + escapedText +
+             '" class="anchor" href="#' + escapedText +
+             '"><span class="header-link"></span></a>' +
+             text + '</h' + (level+1) + '>';
+    }
+
+    let rawMarkup = Marked(this.state.body, {sanitize: false, renderer: renderer});
     return { __html: rawMarkup };
   }
 
