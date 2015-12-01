@@ -9,6 +9,8 @@
 
 }
 
+
+
 .post h2 {
   text-align: center;
   font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -45,6 +47,15 @@
   font-size: 28px;
   line-height: 1.48;
   letter-spacing: -0.014em;
+}
+
+.pullquote a {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.44) 50%);
+  background-size: 2px 3px;
+  background-position: 0 29.5px;
+  background-repeat: repeat-x;
+  outline: 0;
 }
 
 .post pre {
