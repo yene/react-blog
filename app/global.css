@@ -23,9 +23,7 @@ a {
   background-size: 2px 2px;
   background-position: 0 22px;
 
-
   -webkit-tap-highlight-color: rgba(0,0,0,0.3);
-
 }
 
 #wrapper {
@@ -45,9 +43,12 @@ footer {
   font-size: 14px;
 }
 
+.center {
+  text-align: center;
+}
+
 /* metabar
     background-color: #fafafa;
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
-
 */
