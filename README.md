@@ -19,6 +19,9 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 ## Debugging React
 To debug React use the uncompressed, development version by removing *min* from the react script element.
 
+## React and ES2015
+http://babeljs.io/blog/2015/06/07/react-on-es6-plus/
+
 ## Update all packages
 `npm-check-updates -u --upgradeAll`
 
