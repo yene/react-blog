@@ -19,6 +19,13 @@ Small Blog in react, to learn react, that uses HTTP directory listing as index, 
 ## Debugging React
 To debug React use the uncompressed, development version by removing *min* from the react script element.
 
+## Update all packages
+`npm-check-updates -u --upgradeAll`
+
+## Changelogs
+* https://github.com/facebook/react/blob/master/CHANGELOG.md
+* https://github.com/babel/babel/blob/master/CHANGELOG.md
+
 ## Todo
 - [X] make package private so it does not get pushed accidentally
 - [X] revert code back, take post name from filename, just list without preview
