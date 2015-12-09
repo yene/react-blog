@@ -11,3 +11,5 @@ This year I’ve been lucky enough to work on a new game called Secret Hitler, w
 This is the fourth tabletop game I’ve funded on Kickstarter (I am also a co-creator of Cards Against Humanity, Werewolf, and Slap .45), and through those projects, I’ve learned so much about quickly prototyping games and bringing them to market.
 
 In this blog post, I want to talk about the process of designing and prototyping Secret Hitler, and what I learned from the mistakes and blunders in my earlier projects.
+
+Source: https://medium.com/maxistentialism-blog/prototyping-secret-hitler-4ef23ccf727b#.bz72ur5q1
