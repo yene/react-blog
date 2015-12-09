@@ -55,6 +55,7 @@ class Post extends React.Component {
 
   render() {
     var title = Helper.transformFilename(this.props.params.filename);
+    document.title = title;
     return (
       <article className="post">
         <div className="markdownBody" dangerouslySetInnerHTML={this.rawMarkdown()} />
