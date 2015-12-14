@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PostListing from './post-listing';
-import Post from './post';
+import PostListing from './PostListing';
+import Post from './Post';
 import { Router, Route } from 'react-router';
 
 require('./normalize.css');
@@ -22,4 +22,3 @@ ReactDOM.render((
     <Route path="*" component={NoMatch} />
   </Router>
 ), document.getElementById('content'));
-

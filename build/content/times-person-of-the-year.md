@@ -9,4 +9,7 @@
 
 From cellphones to traffic stops, cameras are poised to capture every angle of American life, so much so, the all-seeing eye of Big Brother is paying off: Contemporary surveillance culture offers the ironic reward of validating the truth of black life and structural barriers to full citizenship.
 
+Hrere should be the gist
+<script src="https://gist.github.com/tttptd/352b136e6cfa9acdb72f.js"></script>
+
 Source: https://medium.com/@kanunow/time-s-2015-person-of-the-year-c37b16af30ca#.yxfiqdsww

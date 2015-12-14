@@ -1,8 +1,6 @@
 /*
   use exported functions by importing them (duh)
   import * as Helper from "./helper";
-
-
 */
 
 
